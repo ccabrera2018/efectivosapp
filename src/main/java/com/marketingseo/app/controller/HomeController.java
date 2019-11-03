@@ -11,5 +11,12 @@ public class HomeController {
 	{
 		return "index";
 	}
+	
+	
+	@RequestMapping(value="/blog")
+	public String blog()
+	{
+		return "blog";
+	}
 
 }
