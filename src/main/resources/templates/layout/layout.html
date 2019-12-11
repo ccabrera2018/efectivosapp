@@ -2,7 +2,6 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head">
 <meta charset="utf-8">
-<title th:text="'Seo Marketing  web'"></title>
 <meta name="keywords" content="desarrollo de paginas web" />
 <meta name="description" content="Empresa para creacion de areas">
 <meta name="author" content="seo Marketing">
@@ -119,7 +118,7 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle active" href="index.html">
+														<a class="dropdown-item dropdown-toggle active" th:href="@{/}">
 															Inicio
 														</a>
 													</li>
@@ -141,7 +140,7 @@
 														</a>		
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="index.html">
+														<a class="dropdown-item dropdown-toggle" th:href="@{/contacto}">
 															Contacto
 														</a>	
 													</li>
