@@ -3,9 +3,170 @@
 <head th:fragment="head">
 <meta charset="utf-8">
 <title th:text="'Seo Marketing  web'"></title>
-<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+<meta name="keywords" content="desarrollo de paginas web" />
+<meta name="description" content="Empresa para creacion de areas">
+<meta name="author" content="seo Marketing">
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+<!-- Web Fonts  -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+<!-- Vendor CSS -->
+		<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+		<link rel="stylesheet" th:href="@{/vendor/fontawesome-free/css/all.min.css}" />
+		<link rel="stylesheet" th:href="@{/vendor/animate/animate.min.css}"  />
+		<link rel="stylesheet" th:href="@{/vendor/animate/animate.min.css}" />
+		<link rel="stylesheet" th:href="@{/vendor/simple-line-icons/css/simple-line-icons.min.css}">
+		<link rel="stylesheet" th:href="@{/vendor/owl.carousel/assets/owl.carousel.min.css}">
+		<link rel="stylesheet" th:href="@{/vendor/owl.carousel/assets/owl.theme.default.min.css}">
+		<link rel="stylesheet" th:href="@{/vendor/magnific-popup/magnific-popup.min.css}">
+
+	<!-- Theme CSS -->
+		<link rel="stylesheet" th:href="@{css/theme.css}">
+		<link rel="stylesheet" th:href="@{css/theme-elements.css}">
+		<link rel="stylesheet" th:href="@{css/theme-blog.css}">
+		<link rel="stylesheet" th:href="@{css/theme-shop.css}">
+	
+	
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" th:href="@{vendor/rs-plugin/css/settings.css}">
+		<link rel="stylesheet" th:href="@{vendor/rs-plugin/css/layers.css}">
+		<link rel="stylesheet" th:href="@{vendor/rs-plugin/css/navigation.css}">
+		<link rel="stylesheet" th:href="@{vendor/circle-flip-slideshow/css/component.css}">
+		
+	
+		<!-- Skin CSS -->
+		<link rel="stylesheet" th:href="@{/css/skins/default.css}"> 
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" th:href="@{css/custom.css}">
+
+		<!-- Head Libs -->
+		<script th:src="@{vendor/modernizr/modernizr.min.js}"></script>
+
+
+
 </head>
 <body>
+	<header th:fragment="header" id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0">
+					<div class="header-top header-top-simple-border-bottom">
+						<div class="container h-100">
+							<div class="header-row h-100">
+								<div class="header-column justify-content-start">
+									<div class="header-row">
+										<ul class="header-extra-info d-flex align-items-center pt-3 pb-3">
+											<li class="d-none d-sm-inline-flex ml-0">
+												<div class="header-extra-info-icon">
+													<i class="icon-location-pin icons text-color-primary"></i>
+												</div>
+												<div class="header-extra-info-text">
+													<label>DIRECCION</label>
+													<strong>Av san rafael atlixco Mz3 lt 15</strong>
+												</div>
+											</li>
+											<li class="ml-0 ml-sm-4">
+												<div class="header-extra-info-icon">
+													<i class="icon-phone icons text-color-primary"></i>
+												</div>
+												<div class="header-extra-info-text">
+													<label>LLAMANOS</label>
+													<strong class="text-uppercase"><a href="tel:5584448560">55-84-44-85-60</a></strong>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="header-column justify-content-end d-none d-lg-inline-flex">
+									<div class="header-row">
+										<ul class="header-extra-info d-flex align-items-center pt-3 pb-3">
+											<li class="d-none d-sm-inline-flex ml-0">
+												<div class="header-extra-info-icon">
+													<i class="icon-share icons text-color-primary"></i>
+												</div>
+												<div class="header-extra-info-text">
+													<label>SIGUENOS</label>
+													<strong class="text-uppercase text-2">
+														<a class="pr-3" href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+														<a class="pr-3" href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+														<a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+													</strong>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo mt-0 mb-0">
+										<a href="index.html">
+											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-stripe">
+										<div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle active" href="index.html">
+															Inicio
+														</a>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="index.html">
+															Servicios 
+														</a>
+															<ul class="dropdown-menu">
+																<li><a class="dropdown-item" href="shop-cart.html">Diseño web</a></li>
+																<li><a class="dropdown-item" href="shop-cart.html">Ecomerce</a></li>
+																<li><a class="dropdown-item" href="shop-cart.html">Posicionamiento web</a></li>
+																<li><a class="dropdown-item" href="shop-cart.html">Social media</a></li>
+																<li><a class="dropdown-item" href="shop-cart.html">Servicios de google</a></li>
+															</ul>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="index.html">
+															Nosotros
+														</a>		
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="index.html">
+															Contacto
+														</a>	
+													</li>
+												  <li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="index.html">
+															Blog
+														</a>		
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
 
 
 
