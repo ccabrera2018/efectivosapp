@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/vendor/fontawesome-free/css/all.min.css}" />
+<title th:text="${titulo}"></title>
+
+
+
+<!-- Theme CSS -->
+		<link rel="stylesheet" th:href="@{css/theme.css}">
+		<link rel="stylesheet" th:href="@{css/theme-elements.css}">
+		<link rel="stylesheet" th:href="@{css/theme-blog.css}">
+		<link rel="stylesheet" th:href="@{css/theme-shop.css}">
+<!-- Skin CSS -->
+		<link rel="stylesheet" th:href="@{/css/skins/default.css}"> 
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" th:href="@{css/custom.css}">
+
+		<!-- Head Libs -->
+		<script th:src="@{vendor/modernizr/modernizr.min.js}"></script>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<div class="container py-2">
+
+					<div class="row">
+						<div class="col-lg-3 order-2 order-lg-1">
+							<aside class="sidebar mt-2">
+								<h5 class="font-weight-bold">Forms Layouts</h5>
+								<ul class="nav nav-list flex-column">
+									<li class="nav-item"><a class="nav-link text-dark active" href="elements-forms-basic-contact.html">Basic Contact Form</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements-forms-advanced-contact.php">Advanced Contact Form</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements-forms-contact-recaptcha-v2.html">Contact Form with Recaptcha v2</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements-forms-contact-recaptcha-v3.html">Contact Form with Recaptcha v3</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements-forms-login.html">Login</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements-forms-signup.html">Sign Up</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements-forms-lost-password.html">Lost Password</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements-forms-user-profile.html">User Profile</a></li>
+									<li class="nav-item"><a class="nav-link" href="elements-forms-checkout.html">Checkout</a></li>
+								</ul>
+							</aside>
+						</div>
+						<div class="col-lg-9 order-1 order-lg-2">
+							
+							<div class="overflow-hidden mb-1">
+								<h2 class="font-weight-normal text-7 mb-0"><strong class="font-weight-extra-bold">Actualiza  la imagen del inicio</strong> plis</h2>
+							</div>
+							<div class="overflow-hidden mb-4 pb-3">
+								<p class="mb-0">Feel free to ask for details, don't save any questions!</p>
+							</div>
+
+							<form id="contactForm" class="contact-form" th:action="@{/admin}" th:object="${home}" method="post">
+								<div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
+									<strong>Success!</strong> Your message has been sent to us.
+								</div>
+							
+								<div class="contact-form-error alert alert-danger d-none mt-4" id="contactError">
+									<strong>Error!</strong> There was an error sending your message.
+									<span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
+								</div>
+								
+								<div class="form-row">
+									<div class="form-group col-lg-6">
+										<label class="required font-weight-bold text-dark text-2">NOMBRE IMAGEN</label>
+										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" th:field="*{photo}" id="name">
+									</div>
+									<div class="form-group col-lg-6">
+										<label class="required font-weight-bold text-dark text-2">ATTRIBUTO</label>
+										<input type="text" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" th:field="*{atributo}" id="email" >
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<input type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+
+<script th:src="@{/js/jquery-3.4.1.min.js}"></script>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
